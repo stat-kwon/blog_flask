@@ -11,7 +11,7 @@ CORS(app)
 app.secure_key = 'seol_server'
 
 login_manager = LoginManager()
-login_manager = init_app(app)
+login_manager.init_app(app)
 login_manager.session_protection = 'strong'
 
 @login_manager.user_loader
